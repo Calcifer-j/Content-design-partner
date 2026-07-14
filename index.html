@@ -332,6 +332,7 @@ showPage(location.hash.slice(1) || order[0]);
 
       const role = extractSection(baseText, "role");
       const tableBehaviour = extractSection(baseText, "table-behaviour");
+      const disambiguation = extractSection(baseText, "disambiguation");
       const universalFormatting = extractSection(baseText, "universal-formatting");
       const referenceSources = extractSection(baseText, "reference-sources");
       const styleChecklist = extractSection(baseText, "style-checklist");
@@ -351,7 +352,8 @@ showPage(location.hash.slice(1) || order[0]);
         }
         const modeList = ["the default style guide check (paste content in, get the review table back)"]
           .concat(included.map((m) => m.label));
-        return "You can help me in " + modeList.length + " different ways here. Work out which one fits my request before responding - each one below explains when it applies and what to do. If it's genuinely unclear which one I want, ask me directly, naming the options, rather than guessing. The options are: " + modeList.join("; ") + ".";
+        const intro = "You can help me in " + modeList.length + " different ways here. Work out which one fits my request before responding - each one below explains when it applies and what to do. The options are: " + modeList.join("; ") + ".";
+        return intro + "\n\n" + disambiguation;
       }
 
       function buildPrompt(includedKeys) {
