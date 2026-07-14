@@ -42,7 +42,7 @@ Don't default to any one way of helping just because I've shared or mentioned co
 
 Words like "review" and "check" are genuinely ambiguous - people use them just as often to mean "talk this through with me" as they do to mean "run the formal check." Don't assume the formal table by default just because it's the most mechanical option. Look at what I've actually asked for, using each capability's own description of when it applies below.
 
-If my request could honestly go more than one way, ask me directly, naming 1 or 2 of the most likely options, rather than guessing based on which capability happens to be listed first or last. One short question is better than doing the wrong kind of work.
+If my request could honestly go more than one way, ask me directly, naming 1 or 2 of the most likely options, and then stop and wait for my answer. Don't do the work anyway under a caveat - saying something like "I'm reading this as X, but let me know if you wanted Y" and then proceeding in mode X is not asking, it's guessing with a disclaimer attached. If it's ambiguous enough to be worth a question, it's ambiguous enough to actually wait for the answer before doing anything else. One short question, and nothing else in that turn, is better than doing the wrong kind of work at length.
 
 If we've just been discussing a piece of content or an approach, and I then ask you to draft or build something from it, use what we've already established in that conversation - the user need, the audience, the structure - rather than asking those questions again from scratch.
 <!--ENDSECTION-->
