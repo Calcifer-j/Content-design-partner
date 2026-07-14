@@ -134,7 +134,7 @@ GROUP: Getting started
 ============================================================ -->
 
  <section class="page" id="page-getting-started" data-id="getting-started">
- <h1>Make a custom agent</h1>
+ <h1>Build a content design partner (simple agent)</h1>
       <p>An AI agent is a software program that uses an AI model as its "brain" to pursue a goal on its own. Instead of just answering questions, an agent can break a complex problem into steps, use external tools (like searching the web, or sending an email), and check its own work. Agents include:</p>
       <ul>
         <li> projects or custom GPTs (custom prompts with access to basic tools like web search or a private document library)</li>
@@ -151,7 +151,7 @@ GROUP: Getting started
         <li><a href="https://help.openai.com/en/articles/8554397-creating-a-gpt#h_f6bbed531d">make a custom GPT</a></li>
       </ul>
 
-      <p>The <a href="#content-design-partner">content design partner</a> is a basic agent, which uses instructions to complete a task and tools to check content against other information.</p>
+      <p>The <a href="#content-design-partner">content design partner</a> is a basic agent, which uses instructions and tools to complete a set of review tasks, and check content against other information.</p>
 
     </section>
 
@@ -160,9 +160,9 @@ GROUP: Content design partner
 ============================================================ -->
 
  <section class="page" id="page-content-design-partner" data-id="content-design-partner">
- <h1>Build the Content design partner prompt</h1>
+ <h1>The basic agent: 2i and GOV.UK style check</h1>
 
-      <p>The Content design partner is a basic agent which checks content against GOV.UK style and standards, and outputs a table of potential issues, suggested changes and sources for review. I've also built extra modules that add more capabilities - each one below gives you a complete, ready-to-use version of the prompt with that capability included, so there's nothing to combine yourself.</p>
+      <p>The basic Content design partner is a basic agent which checks content against GOV.UK style and standards, and outputs a table of potential issues, suggested changes and sources for review. I've also built extra modules that add more capabilities - each one below gives you a complete, ready-to-use version of the prompt with that capability included, so there's nothing to combine yourself.</p>
 
       <p>This prompt will review content against these GOV.UK content design principles, including:</p>
       <ul>
@@ -173,9 +173,9 @@ GROUP: Content design partner
         <li> bullet points for anything else</li>
       </ul>
 
-       <h2>How to use make your content partner</h2>
+      <p> It will then share it's review findings in a table which identifies potential issues, information sources and potential solutions.</p>
 
-       <p>Create a new prompt or agent (find out how to do this on your AI platform). Paste this into your agent's custom instructions:</p>
+       <p>Use this prompt and share the content you want to review. This can be something you paste into the prompt, a url, a document or markdown:</p>
       <div class="code-box">
         <div class="code-label">
           <span>Style and standards prompt</span>
@@ -184,20 +184,24 @@ GROUP: Content design partner
         <pre id="style-standards-prompt">Loading…</pre>
       </div>
 
-        <p>Want your agent to do more? Each of these gives you the whole prompt so far, plus one more capability, ready to paste in as-is:</p>
+        <p>This is the simplest form of the content design partner. You may also want to include these features:</p>
       <ul>
-        <li><a href="#discuss-review">Extra module: discuss and review</a></li>
-        <li><a href="#draft-content">Extra module: draft content</a></li>
-        <li><a href="#draft-presentations">Extra module: draft presentations</a></li>
+        <li><a href="#discuss-review">Include the ability to act as a critical review partner</a></li>
+        <li><a href="#draft-content">Include the ability to act as a critical review partner and draft content</a></li>
+        <li><a href="#draft-presentations">Include the ability to act as a critical review partner, draft content and outline presentations</a></li>
       </ul>
     </section>
 
  <section class="page" id="page-discuss-review" data-id="discuss-review">
- <h1>Discuss and review</h1>
+ <h1>2i review with discussion</h1>
 
-      <p>This module turns your agent into a thinking partner rather than a tool that jumps straight to an answer. Say something like 'I have this content problem' and it works through it with you as a peer, rather than producing an instant solution.</p>
+      <p>This version of the <a href="#content-design-partner">simple 2i prompt</a> turns your 2i agent into a critical review partner. This means it can:</p>
+      <ul>
+        <li> review content against GOV.UK style and standards (and output a table which breaks down issues)</li>
+        <li> work through a content problem with you as a thinking partner, starting from user needs</li>
+      </ul>
 
-      <p>This box already includes the base style prompt plus this capability, ready to go - paste the whole thing in as your agent's custom instructions, replacing anything that was there before:</p>
+      <p>Use this prompt and share the content you want to review. This can be something you paste into the prompt, a url, a document or markdown:</p>
       <div class="code-box">
         <div class="code-label">
           <span>Discuss and review prompt</span>
@@ -209,11 +213,16 @@ GROUP: Content design partner
     </section>
 
  <section class="page" id="page-draft-content" data-id="draft-content">
- <h1>Draft content</h1>
+  <h1>2i review, discussion and drafting</h1>
 
-      <p>This module helps your agent draft new content from scratch in GOV.UK style, rather than only reviewing something you've already written.</p>
+      <p>This version of the <a href="#content-design-partner">simple 2i prompt</a> turns your 2i agent into a critical review partner who can draft content. This means it can:</p>
+      <ul>
+        <li> review content against GOV.UK style and standards (and output a table which breaks down issues)</li>
+        <li> work through a content problem with you as a thinking partner, starting from user needs</li>
+        <li> draft content for you, based on your needs and the GOV.UK style guide</li>
+      </ul>
 
-      <p>This box builds on the last one - it already includes the style prompt and the discuss-and-review capability, plus this one. Paste the whole thing in as your agent's custom instructions, replacing anything that was there before:</p>
+      <p>Use this prompt and share the content you want to review or details of what you want to draft. This can be something you paste into the prompt, a url, a document or markdown:</p>
       <div class="code-box">
         <div class="code-label">
           <span>Create content prompt</span>
@@ -225,11 +234,17 @@ GROUP: Content design partner
     </section>
 
  <section class="page" id="page-draft-presentations" data-id="draft-presentations">
- <h1>Draft presentations</h1>
+ <h1>2i review, discussion, drafting and presentations</h1>
 
-      <p>This module helps your agent support you in building a well-rounded, carefully crafted presentation, rather than just generating slide text on request.</p>
+      <p>This version of the <a href="#content-design-partner">simple 2i prompt</a> turns your 2i agent into a critical review partner who can draft content and outline presentations. This means it can:</p>
+      <ul>
+        <li> review content against GOV.UK style and standards (and output a table which breaks down issues)</li>
+        <li> work through a content problem with you as a thinking partner, starting from user needs</li>
+        <li> draft content for you, based on your needs and the GOV.UK style guide</li>
+        <li> draft a presentation outline for you, based on your needs and the GOV.UK style guide</li>
+      </ul>
 
-      <p>This box includes everything so far - style checking, discuss-and-review, drafting content - plus presentations. Paste the whole thing in as your agent's custom instructions, replacing anything that was there before:</p>
+      <p>Use this prompt and share the content you want to review or details oF what you want to draft. This can be something you paste into the prompt, a url, a document or markdown:</p>
       <div class="code-box">
         <div class="code-label">
           <span>Create presentations prompt</span>
