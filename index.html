@@ -296,9 +296,9 @@ showPage(location.hash.slice(1) || order[0]);
 // Pulls the 4 prompt source files live and builds each code box above.
 // Each box is cumulative - it already contains the base prompt plus every
 // capability up to and including its own, so there's nothing to combine by hand.
-// Edit the files in /sources, never the boxes on this page directly - reload to pick up changes.
+// Edit base.md, module-discuss.md, module-write.md or module-presentation.md, never the boxes on this page directly - reload to pick up changes.
 (function () {
-  const SOURCES_DIR = "sources/";
+  const SOURCES_DIR = "";
 
   function extractSection(markdown, name) {
     const re = new RegExp("<!--SECTION:" + name + "-->([\\s\\S]*?)<!--ENDSECTION-->");
